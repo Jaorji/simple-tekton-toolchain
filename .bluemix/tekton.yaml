@@ -4,6 +4,10 @@ inputs:
   branch: master
   service: ${GIT_REPO}
   path: .tekton
+- type: git
+  branch: master
+  service: ${GIT_REPO2}
+  path: .tekton
 triggers:
 - type: git
   name: Trigger
