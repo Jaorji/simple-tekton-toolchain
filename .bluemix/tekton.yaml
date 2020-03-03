@@ -15,6 +15,12 @@ triggers:
   branch: master
   events: {"push":true,"pull_request":true,"pull_request_closed":false}
   eventListener: listener
+- type: git
+  name: Trigger Name
+  service: ${GIT_REPO}
+  branch: master
+  events: {"push":true,"pull_request":true,"pull_request_closed":true}
+  eventListener: listener
 - eventListener: listener
   name: Manual Trigger
   type: manual
