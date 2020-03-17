@@ -36,9 +36,9 @@ services:
   repo2:
     service_id: githubpublic
     parameters:
-      repo_name: 'tekton-adoption'
-      source_repo_url: 'https://github.com/jauninb/tekton-adoption'
-      type: link
+      repo_name: 'greenwell-tekton'
+      source_repo_url: 'https://github.com/open-toolchain/greenwell-tekton'
+      type: clone
   build:
     service_id: pipeline
     parameters:
