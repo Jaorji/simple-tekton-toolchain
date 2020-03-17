@@ -37,7 +37,7 @@ services:
     service_id: githubpublic
     parameters:
       repo_name: '{{toolchain.name}}-repo1'
-      source_repo_url: 'https://github.com/open-toolchain/greenwell-tekton'
+      source_repo_url: 'https://github.com/Jaorji/greenwell-tekton'
       type: clone
   build:
     service_id: pipeline
