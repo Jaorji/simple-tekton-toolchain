@@ -30,7 +30,7 @@ services:
     parameters:
       repo_name: 'hello-tekton'
       source_repo_url: 'https://github.com/open-toolchain/hello-tekton'
-      type: clone
+      type: fork
       has_issues: false
       enable_traceability: true
   repo2:
@@ -38,7 +38,7 @@ services:
     parameters:
       repo_name: 'greenwell-tekton'
       source_repo_url: 'https://github.com/open-toolchain/greenwell-tekton'
-      type: clone
+      type: fork
   build:
     service_id: pipeline
     parameters:
