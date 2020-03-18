@@ -35,7 +35,7 @@ services:
   repo1:
     service_id: githubpublic
     parameters:
-      repo_name: 'hell0-tekton'
+      repo_name: 'hello-tekton'
       repo_url: 'https://github.com/Jaorji/hello-tekton'
       type: link
   build:
