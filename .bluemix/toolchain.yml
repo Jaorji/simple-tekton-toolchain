@@ -28,23 +28,14 @@ services:
   repo:
     service_id: githubpublic
     parameters:
-      repo_name: 'hello-tekton1'
-      source_repo_url: 'https://github.com/Jaorji/hello-tekton'
-      type: link
-      has_issues: false
-      enable_traceability: true
-  repo2:
-    service_id: githubpublic
-    parameters:
       repo_name: 'greenwell-tekton'
-      source_repo_url: 'https://github.com/Jaorji/greenwell-tekton'
+      repo_url: 'https://github.com/ziheng-c/greenwell-tekton'
       type: link
   build:
     service_id: pipeline
     parameters:
       services:
         - repo
-        - repo2
       name: '{{services.repo.parameters.repo_name}}'
       type: tekton
       ui-pipeline: true
@@ -53,7 +44,6 @@ services:
           $text: tekton.yaml
         env:
           GIT_REPO: repo
-          GIT_REPO2: repo2
           CF_APP_NAME: '{{form.pipeline.parameters.app-name}}'
           REGISTRY_REGION_ID: '{{form.pipeline.parameters.registry-region}}'
           REGISTRY_NAMESPACE: '{{form.pipeline.parameters.registry-namespace}}'
