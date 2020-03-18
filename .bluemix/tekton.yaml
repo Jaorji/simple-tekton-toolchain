@@ -6,7 +6,7 @@ inputs:
   path: .tekton
 - type: git
   branch: master
-  service: ${GIT_REPO2}
+  service: ${GIT_REPO1}
   path: .tekton
 triggers:
 - type: git
