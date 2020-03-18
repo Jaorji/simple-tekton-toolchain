@@ -11,6 +11,7 @@ template:
   required:
     - build
     - repo
+    - repo1
   info:
     git url: >
       "[" + $env.repository + "]" +
@@ -31,7 +32,7 @@ services:
       repo_name: 'greenwell-tekton'
       repo_url: 'https://github.com/Jaorji/greenwell-tekton'
       type: link
-   repo2:
+   repo1:
     service_id: githubpublic
     parameters:
       repo_name: 'hell0-tekton'
