@@ -30,7 +30,7 @@ services:
     service_id: githubpublic
     parameters:
       repo_name: 'greenwell-tekton'
-      repo_url: 'https://github.com/Jaorji/greenwell-tekton'
+      repo_url: 'https://github.com/ziheng-c/greenwell-tekton.git'
       type: link
   repo1:
     service_id: githubpublic
