@@ -15,6 +15,16 @@ triggers:
   branch: master
   events: {"push":true,"pull_request":true,"pull_request_closed":false}
   eventListener: listener
+  properties:
+  - name: apikey
+    value: ${API_KEY}
+    type: SECURE
+  - name: cluster
+    value: ${PROD_CLUSTER_NAME}
+    type: text 
+  - name: registryNamespace
+    value: ${REGISTRY_NAMESPACE}
+    type: text
 - type: git
   name: Trigger Name
   service: ${GIT_REPO}
